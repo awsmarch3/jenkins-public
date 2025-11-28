@@ -1,13 +1,9 @@
-package com.devops.test;
-
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
 @RestController
-public class HelloController {
-    
+@RequestMapping("/api")
+public class TestController {
+
     @GetMapping("/hello")
     public String hello() {
-        return "Hello from DevOps!";
+        return "Hello from Spring Boot!";
     }
 }
